@@ -16,7 +16,7 @@ export default function App() {
     const alt = parseFloat(altura) / 100; // Converter altura para número
     const imc = parseFloat(peso) / (alt * alt); // Calcular IMC
   
-    if (isNaN(alt) || isNaN(peso) || imc <= 0) {
+    if (isNaN(alt) || isNaN(parseFloat(peso)) || imc <= 0) {
       Speech.speak(
         'Dados incorretos! Por favor, preencha os campos corretamente. Exemplo: Peso 70 (Kg), Altura 175 (cm)',
         { language: 'pt-BR' }
