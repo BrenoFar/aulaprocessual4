@@ -9,20 +9,28 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFC300"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aulaprocessual4",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFC300"
       }
     },
+    "package": "com.aulaprocessual4",
+    "versionCode": 1,
     "web": {
       "favicon": "./assets/favicon.png"
     }
