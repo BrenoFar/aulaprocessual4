@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center', // Center vertically
   },
   tituloImage: {
-    paddingTop: 10,
+    paddingTop: 50,
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',

@@ -63,7 +63,7 @@ export default function App() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <StatusBar style="auto" />
         <Text style={styles.titulo}>Cálculo de IMC</Text>
-        <CustomImage title="IMC" image={medica} width={150} height={150} />
+        <CustomImage title="" image={balanca} width={150} height={150} />
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.input}
@@ -83,12 +83,12 @@ export default function App() {
           />
         </View>
         <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-          <Text style={styles.buttonText}>Calcular</Text>
+          <Text style={styles.buttonText}><CustomImage title="Calcular" image={medica} width={125} height={125} /></Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleClear}>
           <Text style={styles.buttonText}>Limpar</Text>
         </TouchableOpacity>
-        <CustomImage title="IMC" image={balanca} width={150} height={150} />
+        
       </ScrollView>
     </SafeAreaView>
   );
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 25,
-    color: '#FFF',
+    color: '#8D4600',
     fontWeight: 'bold',
   },
 });
